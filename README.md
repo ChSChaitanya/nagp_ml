@@ -33,9 +33,12 @@ nagp_ml/
 - Final model: Decision Tree Classifier selected using F1 score, recall, and precision comparison.
 
 ## How to Run the API
-1. Install dependencies: `pip install -r requirements.txt`
-2. Start the service: `uvicorn app:app --reload`
-3. Send a POST request to `/predict` with the JSON structure in `sample_request.json`.
+1. Create a python virtual environment: `python -m venv churn_env`
+2. Install dependencies: `pip install -r requirements.txt`
+3. Run the notebook `notebook/churn_analysis.ipynb` to create a new model
+4. Start the service: `uvicorn app:app --reload`
+5. Send a POST request to `/predict` with the JSON structure in `sample_request.json` using 
+   `curl -X POST http://127.0.0.1:8000/predict -H "Content-Type: application/json" -d @sample_request.json`
 
 ## Sample Response
 ```json
