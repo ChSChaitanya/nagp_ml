@@ -33,6 +33,7 @@ nagp_ml/
 - Final model: Decision Tree Classifier selected using F1 score, recall, and precision comparison.
 
 ## How to Run the API
+1. clone the repo: `git clone https://github.com/ChSChaitanya/nagp_ml`
 1. Create a python virtual environment: `python -m venv churn_env`
 2. Install dependencies: `pip install -r requirements.txt`
 3. Run the notebook `notebook/churn_analysis.ipynb` to create a new model
